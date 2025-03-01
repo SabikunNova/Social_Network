@@ -1,0 +1,59 @@
+<!-- chat.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Chat</title>
+    <link rel="stylesheet" href="/chat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar (Same as index.html) -->
+    
+    <div class="chat-container">
+        <div class="chat-sidebar">
+            <div class="chat-search">
+                <input type="text" placeholder="Search conversations...">
+            </div>
+            <div class="chat-tabs">
+                <button class="active">Chats</button>
+                <button>Groups</button>
+            </div>
+            <div class="chat-list">
+                <!-- Chat conversations will be loaded here -->
+            </div>
+        </div>
+        
+        <div class="chat-main">
+            <div class="chat-header">
+                <div class="chat-user-info">
+                    <img src="images/profile.jpg" alt="Chat User">
+                    <div>
+                        <h3>Jane Smith</h3>
+                        <span class="online-status">Online</span>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button><i class="fas fa-phone"></i></button>
+                    <button><i class="fas fa-video"></i></button>
+                    <button><i class="fas fa-info-circle"></i></button>
+                </div>
+            </div>
+            
+            <div class="chat-messages">
+                <!-- Messages will be loaded here -->
+            </div>
+            
+            <div class="chat-input">
+                <button><i class="fas fa-paperclip"></i></button>
+                <input type="text" placeholder="Type a message...">
+                <button><i class="fas fa-smile"></i></button>
+                <button class="send-btn"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/chat.js"></script>
+</body>
+</html>

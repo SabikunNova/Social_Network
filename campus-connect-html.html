@@ -1,0 +1,146 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect</title>
+    <link rel="stylesheet" href="./campus-connect-css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <img src="Immages/cropped-Untitled-design.png" alt="CampusConnect Logo" class="logo">
+            <h1>BAIUST </h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="nav-menu">
+            <a href="campus-connect-html.html" class="active"><i class="fas fa-home"></i> Home</a>
+            <a href="group.html"><i class="fas fa-users"></i> Groups</a>
+            <a href="events.html"><i class="fas fa-calendar"></i> Events</a>
+            <a href="chat.html"><i class="fas fa-comment"></i> Chat</a>
+            <a href="marketplace.html"><i class="fas fa-store"></i> Marketplace</a>
+            
+
+            <div class="profile-dropdown">
+                <img src="images/profile.jpg" alt="Profile" class="profile-pic">
+                <div class="dropdown-content">
+                    <a href="profile.html">My Profile</a>
+                    <a href="setting.html">Settings</a>
+                    <a href="logout.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left-sidebar">
+            <div class="user-profile">
+                <img src="images/profile.jpg" alt="Profile Picture">
+                <h3>John Doe</h3>
+                <p>Computer Science - 2024</p>
+            </div>
+            <ul class="side-menu">
+                <li><a href="friends.html"><i class="fas fa-user-friends"></i> Friends</a></li>
+                <li><a href="course.html"><i class="fas fa-book"></i> Courses</a></li>
+                <li><a href="resources.html"><i class="fas fa-file"></i> Resources</a></li>
+                <li><a href="annoouncements.html"><i class="fas fa-bullhorn"></i> Announcements</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Feed -->
+        <main class="main-content">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="post-input">
+                    <img src="images/profile.jpg" alt="Profile">
+                    <textarea placeholder="What's on your mind?"></textarea>
+                </div>
+                <div class="post-actions">
+                    <button><i class="fas fa-image"></i> Photo</button>
+                    <button><i class="fas fa-video"></i> Video</button>
+                    <button><i class="fas fa-file"></i> File</button>
+                    <button class="post-btn">Post</button>
+                </div>
+            </div>
+
+            <!-- Posts Feed -->
+            <div class="posts-feed">
+                <!-- Sample Post -->
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images/profile.jpg" alt="User">
+                        <div class="post-info">
+                            <h4>Jane Smith</h4>
+                            <p class="timestamp">2 hours ago</p>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <p>Just finished my presentation for the Software Engineering class! 🎉</p>
+                        <img src="images/post-image.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-actions">
+                        <button><i class="fas fa-thumbs-up"></i> Like</button>
+                        <button><i class="fas fa-comment"></i> Comment</button>
+                        <button><i class="fas fa-share"></i> Share</button>
+                    </div>
+                    <div class="comments-section">
+                        <div class="comment">
+                            <img src="images/profile.jpg" alt="Commenter">
+                            <div class="comment-content">
+                                <h5>Mike Johnson</h5>
+                                <p>Great work! Looking forward to seeing it.</p>
+                            </div>
+                        </div>
+                        <div class="add-comment">
+                            <img src="images/profile.jpg" alt="Profile">
+                            <input type="text" placeholder="Write a comment...">
+                            <button>Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="sidebar right-sidebar">
+            <!-- Upcoming Events -->
+            <div class="widget events-widget">
+                <h3>Upcoming Events</h3>
+                <div class="event-item">
+                    <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Mar</span>
+                    </div>
+                    <div class="event-info">
+                        <h4>Tech Hackathon</h4>
+                        <p>Computer Lab • 10:00 AM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Active Groups -->
+            <div class="widget groups-widget">
+                <h3>Your Groups</h3>
+                <div class="group-item">
+                    <img src="images/group1.jpg" alt="Group">
+                    <div class="group-info">
+                        <h4>Programming Club</h4>
+                        <p>3 new posts</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="campus-connect-js.js"></script>
+</body>
+</html>
